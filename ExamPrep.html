@@ -1,0 +1,138 @@
+<html> 
+
+<title>LIST</title>
+
+<head>
+
+</head>
+
+<script>
+
+//basic code
+    // document.write("Hello World");
+    // alert("Alert Box")
+
+    // var x = prompt("Enter Number");
+
+    // document.write("Number is " + x);
+
+    // document.bgColor="white";
+    // document.fgColor="black"
+
+
+//  searning a string in string
+function disp() {
+        alert("Hello ! ARBAZ");
+        var x = "hello world i am arbaz khan";
+        var y = prompt("Enter String : ");
+        var z = x.search(y);
+        alert("Position is : " + z)
+    } 
+
+// Contatenate String
+function func() {
+    var a = prompt("Enter String a");
+    var b = prompt("Enter String b");
+
+    var c = a + " " + b ;
+
+    alert("Final String is : " + c);
+}
+
+// UpperCase and LowerCase to String
+function func() {
+    var a = prompt("Enter String ");
+    var b = alert(a.toUpperCase());
+}
+function lower() {
+    var a = prompt("Enter String for Lower ");
+    var b = alert(a.toLowerCase());
+}
+
+// Print Date
+function datee() {
+    var d = new Date();
+    var d1 = d.getDay();
+    var d2 = d.getMonth() + 1;
+    var d3 = d.getFullYear();
+    
+    // document.write(d);
+    // document.write(d1+"-"+d2+"-"+d3);
+     alert(d1+"-"+d2+"-"+d3);
+}
+
+// Time Function 
+function timee() {
+    var t = new Date();
+    var t1 = t.getSeconds();
+    var t2 = t.getMinutes();
+    var t3 = t.getHours();
+    var tt = (t1+"-"+t2+"-"+t3);
+    alert(tt);
+}
+
+function time2() {
+    var t = new Date();
+    var t1 = t.getSeconds();
+    var t2 = t.getMinutes();
+    var t3 = t.getHours();
+    var time = (t1+"-"+t2+"-"+t3)
+    // document.write(time);
+    f1.t1.value=t1;
+    f1.t2.value=t2
+    f1.t3.value=t3;
+setTimeout("time2()",1);
+}
+
+
+</script>
+
+<body>
+
+
+    Name : <input type="text"> <br><br>
+    Phone : <input type="text" maxlength="10"> <br><br>
+    Email Address : <input type="text"> <br><br>
+    Password : <input type="password"> <br><br>
+    Confirm Password : <input type="password"> <br><br>
+
+
+<input type="checkbox" name="check" disabled>
+<input type="checkbox" name="check" checked>
+
+
+   
+    <button onclick="disp()">Clicke Me (1st)</button>
+
+    <button onclick="func()">SearchString</button>
+
+    <button onclick="func()">UpperCase</button>
+
+    <button onclick="lower()">LowerCase</button>
+
+    <button onclick="datee()">Date</button>
+
+    <button onclick="timee()">Time</button>
+
+
+<form name="f1" action="">
+
+    <input type="text" name="t3">
+    <input type="text" name="t2">
+    <input type="text" name="t1">    
+
+    <select name="s1" id="s1">
+        <option value="BMW">BMW</option>
+        <option value="JAGUAR">JAGUAR</option>
+        <option value="AUDI">AUDI</option>
+    </select>
+
+
+
+<button onclick="time2()">Click Me for Time</button>
+
+
+</body>
+
+
+</html>
